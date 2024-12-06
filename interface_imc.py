@@ -1,12 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox
-from calculadora_imc import calcular_imc, classificar_imc  # Certifique-se de que este módulo está correto
+from calculadora_imc import calcular_imc, classificar_imc  # Importa o módulo de cálculo
 
 # Função para calcular e mostrar o resultado
 def mostrar_resultado():
     try:
-        peso = float(entry_peso.get())
-        altura = float(entry_altura.get())
+        peso = float(entry_peso.get().replace(",", "."))  # Substitui a vírgula por ponto se necessário
+        altura = float(entry_altura.get().replace(",", "."))
         imc = calcular_imc(peso, altura)
         classificacao = classificar_imc(imc)
         messagebox.showinfo("Resultado", f"Seu IMC é {imc:.2f}. Classificação: {classificacao}")
