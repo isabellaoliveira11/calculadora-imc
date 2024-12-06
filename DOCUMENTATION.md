@@ -1,10 +1,23 @@
 # Documentação do Projeto: Calculadora de IMC
 
-## 1. Introdução
-Este projeto consiste em um script Python que calcula o Índice de Massa Corporal (IMC) de um usuário e classifica o resultado de acordo com as faixas de peso estabelecidas. O objetivo é proporcionar uma ferramenta prática para cálculo de IMC e análise da saúde do usuário com base em seu peso e altura.
+## Descrição
 
-## 2. Funcionalidades
-- **Entrada de dados**: O script solicita ao usuário que informe o peso e a altura.
-- **Cálculo do IMC**: Realiza o cálculo do IMC utilizando a fórmula `IMC = peso / (altura ** 2)`.
-- **Classificação do IMC**: Classifica o IMC em categorias como "Abaixo do peso", "Peso normal", "Sobrepeso", "Obesidade grau 1", "Obesidade grau 2" e "Obesidade grau 3".
-- **Exibição do resultado**: Exibe o valor do IMC e a classificação de forma formatada.
+Este projeto consiste em uma calculadora de IMC (Índice de Massa Corporal) criada com Python e Tkinter. Ele permite ao usuário inserir peso e altura para calcular o IMC e obter uma classificação (ex: baixo peso, peso normal, sobrepeso).
+
+## Desenvolvimento
+
+### Desafios
+
+- **Tratamento de erros**: Lidamos com a entrada de dados incorretos, como texto em vez de números, usando tratamento de exceções.
+- **Interface com Tkinter**: Ajustamos a posição dos elementos para uma interface amigável.
+- **Instalação do Tkinter**: Garantimos que o Tkinter estivesse disponível no ambiente de desenvolvimento.
+
+### Como o Git foi útil
+
+- **Controle de versão**: Mantivemos o histórico do projeto e fomos capazes de reverter para versões anteriores quando necessário.
+- **Branches**: Criamos branches para desenvolver diferentes partes do projeto sem interferir no código principal.
+- **Commits**: Fizemos commits frequentes com mensagens claras para documentar alterações.
+
+## Conclusão
+
+O Git foi essencial para organizar o desenvolvimento do projeto e manter um histórico claro. O projeto foi implementado com sucesso e pode ser ampliado no futuro.
