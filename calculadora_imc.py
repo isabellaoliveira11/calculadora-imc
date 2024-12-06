@@ -18,7 +18,8 @@ def classificar_imc(imc):
 
 # Entrada de dados
 peso = float(input("Digite o peso (kg): "))
-altura = float(input("Digite a altura (m): "))
+altura = float(input("Digite a altura (m): ").replace(',', '.'))  # Substitui a vírgula por ponto
+
 
 # Cálculo e exibição do resultado
 imc = calcular_imc(peso, altura)
